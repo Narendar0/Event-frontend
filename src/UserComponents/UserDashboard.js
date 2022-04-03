@@ -7,7 +7,7 @@ function UserDashboard() {
     const [eventList, setEventList] = useState([])
     useEffect(async () => {
         try {
-            let dashboard = await axios.get("http://localhost:3000/userdashboard", {
+            let dashboard = await axios.get("https://event-management-app-cap.herokuapp.com/userdashboard", {
                 headers: {
                     Authorization: window.localStorage.getItem("my_token")
                 }
@@ -24,7 +24,7 @@ function UserDashboard() {
 
     let fetchTheaters = async () => {
         try {
-            let allEvent = await axios.get("http://localhost:3000/event")
+            let allEvent = await axios.get("https://event-management-app-cap.herokuapp.com/event")
             setEventList(allEvent.data)
         } catch (error) {
             console.log(error)

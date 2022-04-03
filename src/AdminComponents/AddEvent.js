@@ -15,7 +15,7 @@ function AddEvent() {
     onSubmit: async (values) => {
 
       try {
-        await axios.post("http://localhost:3000/add", values)
+        await axios.post("https://event-management-app-cap.herokuapp.com/add", values)
         navigate("/admindashboard")
       } catch (error) {
         console.log(error)

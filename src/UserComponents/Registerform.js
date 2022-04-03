@@ -17,7 +17,7 @@ const Registerform = () => {
     onSubmit: async (values) => {
 
       try {
-        await axios.post("http://localhost:3000/details", values)
+        await axios.post("https://event-management-app-cap.herokuapp.com/details", values)
         navigate("/userdashboard")
       } catch (error) {
         console.log(error)
