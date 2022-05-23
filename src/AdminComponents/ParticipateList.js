@@ -13,7 +13,7 @@ function ParticipateList() {
 
   let fetchMovies = async () => {
     try {
-      let userData = await axios.get("https://event-management-app-cap.herokuapp.com/userdata")
+      let userData = await axios.get("https://plans-new.herokuapp.com/userdata")
       setUsers(userData.data)
     } catch (error) {
       console.log(error);

@@ -16,7 +16,7 @@ function Register() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post("https://event-management-app-cap.herokuapp.com/register", values)
+        await axios.post("https://plans-new.herokuapp.com/register", values)
         navigate("/")
       } catch (error) {
         console.log(error)

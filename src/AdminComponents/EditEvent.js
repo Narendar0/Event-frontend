@@ -9,7 +9,7 @@ function EditEvent() {
     const navigate = useNavigate()
     useEffect(async () => {
         try {
-            let userData = await axios.get(`https://event-management-app-cap.herokuapp.com/event/${params.id}`)
+            let userData = await axios.get(`https://plans-new.herokuapp.com/event/${params.id}`)
             formik.setValues(userData.data)
         } catch (error) {
             console.log(error)
@@ -27,7 +27,7 @@ function EditEvent() {
         onSubmit: async (values) => {
             delete values._id;
             try {
-                await axios.put(`https://event-management-app-cap.herokuapp.com/event/${params.id}`, values)
+                await axios.put(`https://plans-new.herokuapp.com/event/${params.id}`, values)
                 navigate("/admindashboard")
             } catch (error) {
                 console.log(error)
