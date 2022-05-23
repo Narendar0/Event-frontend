@@ -37,7 +37,7 @@ function ParticipateList() {
                     <th>Name</th>
                     <th>Email</th>
                     <th>Number</th>
-                    <th>Member</th>
+                    <th>Plan</th>
                     <th>Gender</th>
 
                   </tr>

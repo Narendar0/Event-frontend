@@ -32,7 +32,7 @@ const Registerform = () => {
         <div className='container '  >
           <div className='row tableform sticky-top text-center'>
             <div className='col-sm'>
-              <h1>Register form</h1>
+              <h1>Subscription</h1>
             </div>
           </div>
           <div className='row mt-4 tableform  '>
@@ -82,7 +82,7 @@ const Registerform = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-conter-center">
-                  <button className="btn btn-primary w-50" type="submit">Submit form</button>
+                  <button className="btn btn-primary w-50" type="submit">Subscribe</button>
                 </div>
               </form>
             </div>
