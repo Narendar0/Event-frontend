@@ -61,12 +61,13 @@ const Registerform = () => {
 
                 </div>
                 <div className="col-md-3">
-                  <label for="validationCustom04" className="form-label">Member</label>
+                  <label for="validationCustom04" className="form-label">plan</label>
                   <select className="form-select" name='member' id="validationCustom04" onChange={formik.handleChange} value={formik.values.member} required >
                     <option selected disabled value="">Choose...</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                    <option>Diamond</option>
                   </select>
 
                 </div>
