@@ -11,7 +11,7 @@ function AdminDashboard() {
 
     let fetchTheaters = async () => {
         try {
-            let allEvents = await axios.get("https://event-management-app-cap.herokuapp.com/event")
+            let allEvents = await axios.get("https://plans-new.herokuapp.com/event")
             setEventList(allEvents.data)
         } catch (error) {
             console.log(error)
@@ -22,7 +22,7 @@ function AdminDashboard() {
         try {
             let result = window.confirm("Are you sure want to delete?")
             if (result) {
-                await axios.delete(`https://event-management-app-cap.herokuapp.com/event/${id}`)
+                await axios.delete(`https://plans-new.herokuapp.com/event/${id}`)
                 fetchTheaters();
             }
         } catch (error) {
